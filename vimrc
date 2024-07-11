@@ -34,6 +34,10 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 
 set encoding=utf-8
 
+" 设置 <localleader>-<Space> 绑定保存并编译
+nnoremap <silent> <localleader><Space> :w<CR>
+" 自动保存文件并编译
+" autocmd User VimtexEventPreCompilePost :w
 let g:vimtex_view_method = 'skim'
 let g:vimtex_compiler_method = 'latexmk'
 
