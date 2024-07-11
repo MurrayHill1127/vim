@@ -30,8 +30,8 @@ cmap ce Copilot enable
 cmap cd Copilot disable
 
 nnoremap <C-n> :NERDTreeToggle<CR>
-
-
+nnoremap J 6j
+nnoremap K 6k
 set encoding=utf-8
 
 " 设置 <localleader>-<Space> 绑定保存并编译
