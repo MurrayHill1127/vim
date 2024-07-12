@@ -42,6 +42,9 @@ endsnippet
 snippet "(^|[^a-zA-Z])mm" "Inline LaTeX math" rA
 `!p snip.rv = match.group(1)`\$${1:${VISUAL:}}\$$0
 endsnippet
+snippet mm "$$" i
+${${1:${VISUAL:}}}$$0
+endsnippet
 
 snippet nn "$$ $$" bA
 $$
@@ -66,7 +69,10 @@ snippet f0 "foot" iA
 [^$1]$0
 endsnippet
 
-snippet uu "url" iA
+snippet "(^|[^a-zA-Z])uu" "url" rA 
+`!p snip.rv = match.group(1)`[$2](${1:${VISUAL:}})$0
+endsnippet
+snippet uu "url" i
 [${1:}](${2:${VISUAL:}})$0
 endsnippet
 	
@@ -77,14 +83,22 @@ endsnippet
 snippet "(^|[^a-zA-Z])ii" "italic" rA
 `!p snip.rv = match.group(1)`*${1:${VISUAL:}}*$0
 endsnippet
+snippet ii "italic" options
+*${1:${VISUAL:}}*$0
+endsnippet
 
 snippet "(^|[^a-za-z])bb" "bold" rA
 `!p snip.rv = match.group(1)`**${1:${VISUAL:}}**$0
 endsnippet
-
+snippet bb "bold" i
+**${1:${VISUAL:}}**$0
+endsnippet
 
 snippet "(^|[^a-za-z])cc" "code" rA
 `!p snip.rv = match.group(1)`\`${1:${VISUAL:}}\`$0
+endsnippet
+snippet cc "code" i
+\`${1:${VISUAL:}}\`$0
 endsnippet
 
 snippet \\\ "code block" bA
@@ -96,12 +110,18 @@ ${VISUAL:}}
 $0
 endsnippet
 
-snippet "(^|[^a-za-z])gg" "code" rA
+snippet "(^|[^a-za-z])gg" "gg" rA
 `!p snip.rv = match.group(1)`~~${1:${VISUAL:}}~~$0
+endsnippet
+snippet gg "gg" i
+~~${1:${VISUAL:}}~~$0
 endsnippet
 
 snippet "(^|[^a-za-z])hh" "code" rA
 `!p snip.rv = match.group(1)`==${1:${VISUAL:}}==$0
+endsnippet
+snippet hh "hh" i
+==${1:${VISUAL:}}==$0
 endsnippet
 
 

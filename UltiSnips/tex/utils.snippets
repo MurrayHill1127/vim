@@ -25,24 +25,43 @@ snippet dat "title author date" b
 $0
 endsnippet
 
-snippet tt "\texttt{}" i 
+snippet "(^|[^a-zA-Z])cc" "\texttt{}" rA
+`!p snip.rv = match.group(1)`\texttt{${1:${VISUAL:}}}$0
+endsnippet
+snippet cc "\texttt{}" i 
 \texttt{${1:${VISUAL:}}}$0
 endsnippet
 
-snippet ti "\textit" i 
+snippet "(^|[^a-zA-Z])ii" "\textit{}" rA
+`!p snip.rv = match.group(1)`\textit{${1:${VISUAL:}}}$0
+endsnippet
+snippet ii "\textit" i 
 \textit{${1:${VISUAL:}}}$0
 endsnippet
 
-snippet tb "\textbf" i
+snippet "(^|[^a-zA-Z])bb" "\textbf{}" rA
+`!p snip.rv = match.group(1)`\textbf{${1:${VISUAL:}}}$0
+endsnippet
+snippet bb "\textbf" i
 \textbf{${1:${VISUAL:}}}$0
 endsnippet
 
+snippet "(^|[^a-zA-Z])ul" "\underline{}" rA
+`!p snip.rv = match.group(1)`\underline{${1:${VISUAL:}}}$0
+endsnippet
 snippet ul "\underline{}" i
 \underline{${1:${VISUAL:}}}$0
 endsnippet
 
+snippet "(^|[^a-zA-Z])em" "\emph{}" rA
+`!p snip.rv = match.group(1)`\emph{${1:${VISUAL:}}}$0
+endsnippet
 snippet em "\emph{}" i
 \emph{${1:${VISUAL:}}}$0
 endsnippet
 
+
+snippet f0 "\foot{}" iA 
+\footnote{${1:${VISUAL:}}}$0
+endsnippet
 
