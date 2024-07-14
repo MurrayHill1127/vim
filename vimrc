@@ -2,7 +2,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'preservim/nerdtree'
 	Plug 'SirVer/ultisnips'
 	Plug 'lervag/vimtex'
-	Plug 'kassio/neoterm'
+
 call plug#end()
 
 filetype on            
