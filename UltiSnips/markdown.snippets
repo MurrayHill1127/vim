@@ -7,9 +7,8 @@ endsnippet
 
 
 
-snippet "^(\d+) " "Numbered List" rbA
-`!p snip.rv = match.group(1) + '. '`${1:${VISUAL:}}
-$0
+snippet "^(\d+) " "Numbered List" rA
+`!p snip.rv = match.group(1) + '. '`${1:${VISUAL:}}$0
 endsnippet
 
 snippet "h1 " "# " rbA
