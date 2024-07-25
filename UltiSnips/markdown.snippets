@@ -1,3 +1,12 @@
+snippet bE "head" bA
+<h2 style="text-align: center;">${1:${VISUAL:}}</h2>
+<p class="right">${2:Jan 1, 2001}<br />${3:SDUQD}</p>
+$0
+endsnippet
+
+
+
+
 snippet "^(\d+) " "Numbered List" rbA
 `!p snip.rv = match.group(1) + '. '`${1:${VISUAL:}}
 $0
