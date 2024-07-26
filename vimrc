@@ -1,14 +1,12 @@
 call plug#begin('~/.vim/plugged')
 	Plug 'preservim/nerdtree'
 	Plug 'SirVer/ultisnips'
-	Plug 'lervag/vimtex'
 
 call plug#end()
 
 filetype on            
 filetype plugin on    
 filetype indent on   
-
 
 syntax on
 set number
@@ -32,13 +30,19 @@ cmap cd Copilot disable
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap J 6j
 nnoremap K 6k
+
 set encoding=utf-8
 
 " 设置 <localleader>-<Space> 绑定保存并编译
 nnoremap <silent> <localleader><Space> :w<CR>
 " 自动保存文件并编译
 " autocmd User VimtexEventPreCompilePost :w
-let g:vimtex_view_method = 'skim'
+let g:vimtex_view_method = 'zathura'
+let g:vimtex_view_general_viewer = 'zathura'
+let g:vimtex_view_general_options = '--fork'
+
+
+
 let g:vimtex_compiler_method = 'latexmk'
 
 function! s:close_quickfix_later(timer)
@@ -56,3 +60,7 @@ let g:UltiSnipsJumpBackwardTrigger = '<S-Tab>'  " use Shift-Tab to move backward
 
 let g:UltiSnipsSilentErrors=1
 
+" ----------------WINDWOS------------------------
+" 将 Alt+w 映射为 Ctrl+w
+" nnoremap <A-w> <C-w>
+" ----------------WINDOWS------------------------
