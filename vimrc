@@ -34,7 +34,7 @@ cmap cd Copilot disable
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap J 6j
 nnoremap H J
-nnoremap Y i<CR>
+nnoremap Y i<CR><Esc>
 nnoremap K 6k
 set encoding=utf-8
 
