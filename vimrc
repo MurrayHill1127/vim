@@ -19,6 +19,9 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 
+
+autocmd FileType html setlocal tabstop=2 shiftwidth=2 softtabstop=2
+
 set hlsearch
 set ignorecase
 set smartcase
@@ -30,6 +33,8 @@ cmap cd Copilot disable
 
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap J 6j
+nnoremap H J
+nnoremap Y i<CR>
 nnoremap K 6k
 set encoding=utf-8
 
