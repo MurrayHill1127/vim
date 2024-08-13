@@ -31,6 +31,7 @@ imap jk <Esc>
 cmap ce Copilot enable
 cmap cd Copilot disable
 
+
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap J 6j
 nnoremap H J
@@ -41,9 +42,9 @@ set encoding=utf-8
 nnoremap <silent> <localleader><Space> :w<CR>
 
 let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/UltiSnips']
-let g:UltiSnipsExpandTrigger       = '<Tab>'    " use Tab to expand snippets
+let g:UltiSnipsExpandTrigger       = '<S-Tab>'    " use Tab to expand snippets
 let g:UltiSnipsJumpForwardTrigger  = '<Tab>'    " use Tab to move forward through tabstops
-let g:UltiSnipsJumpBackwardTrigger = '<S-Tab>'  " use Shift-Tab to move backward through tabstops
+let g:UltiSnipsJumpBackwardTrigger = '<C-Tab>'  " use Shift-Tab to move backward through tabstops
 let g:UltiSnipsSilentErrors=1
 
 " ----------------WINDWOS------------------------
