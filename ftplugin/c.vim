@@ -5,6 +5,5 @@ set filetype=c
 setlocal makeprg=gcc\ -g\ %\ -o\ %<
 
 nnoremap <silent> <localleader>ll :w<CR>:make<CR>:!./%<<CR>
-inoremap { {<CR>}<Esc>O
 
 
