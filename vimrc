@@ -27,6 +27,7 @@ set ignorecase
 set smartcase
 
 imap jk <Esc>
+inoremap { {<CR>}<Esc>O
 
 cmap ce Copilot enable
 cmap cd Copilot disable
